@@ -4,18 +4,18 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\ProdiSearch */
+/* @var $searchModel app\models\JurusanSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Prodis';
+$this->title = 'Jurusans';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="prodi-index">
+<div class="jurusan-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Prodi', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Create Jurusan', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -26,9 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'prodi',
-            'keterangan',
+            'id_jurusan',
+            'kode_jurusan',
+            'nama_jurusan',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
